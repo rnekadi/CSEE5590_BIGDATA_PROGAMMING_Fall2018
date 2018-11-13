@@ -1,0 +1,37 @@
+CREATE TABLE IF NOT EXISTS heroes_super_powers (
+hero_names String +Agility +AcceleratedHealing  +LanternPowerRing +DimensionalAwareness +ColdResistance +Durability +Stealth +EnergyAbsorption +Flight +DangerSense +UnderwaterBreathing +Marksmanship +WeaponsMaster +PowerAugmentation +AnimalAttributes +Longevity +INTelligence +SuperStrength +Cryokinesis +Telepathy +EnergyArmor +EnergyBlasts +Duplication +SizeChanging +DensityControl +Stamina +AstralTravel +AudioControl +Dexterity +Omnitrix +SuperSpeed +Possession +AnimalOrientedPowers +WeaponBasedPowers +Electrokinesis +DarkforceManipulation +DeathTouch +Teleportation +EnhancedSenses +Telekinesis +EnergyBeams +Magic +Hyperkinesis +Jump +Clairvoyance +DimensionalTravel +PowerSense +Shapeshifting +PeakHumanCondition +Immortality +Camouflage +ElementControl +Phasing +AstralProjection +ElectricalTransport +FireControl +Projection +Summoning +EnhancedMemory +Reflexes +Invulnerability +EnergyConstructs +ForceFields +SelfSustenance +AntiGravity +Empathy +PowerNullifier +RadiationControl +PsionicPowers +Elasticity +SubstanceSecretion +ElementalTransmogrification +TechnopathCyberpath +PhotographicReflexes +SeismicPower +Animation +Precognition +MindControl +FireResistance +PowerAbsorption +EnhancedHearing +NovaForce +Insanity +Hypnokinesis +AnimalControl +NaturalArmor +INTangibility +EnhancedSight +MolecularManipulation +HeatGeneration +Adaptation +Gliding +PowerSuit +MindBlast +ProbabilityManipulation +GravityControl +Regeneration +LightControl +Echolocation +Levitation +ToxinDiseaseControl +Banish +EnergyManipulation +HeatResistance +NaturalWeapons +TimeTravel +EnhancedSmell +Illusions +Thirstokinesis +HairManipulation +Illumination +Omnipotent +Cloaking +ChangingArmor +PowerCosmic +Biokinesis +WaterControl +RadiationImmunity +VisionTelescopic +ToxinDiseaseResistance +SpatialAwareness +EnergyResistance +TelepathyResistance +MolecularCombustion +Omnilingualism +PortalCreation +Magnetism +MindControlResistance +PlantControl +Sonar +SonicScream +TimeManipulation +EnhancedTouch +MagicResistance +Invisibility +SubMariner +RadiationAbsorption + INTuitiveaptitude +VisionMicroscopic +Melting +WindControl +SuperBreath +Wallcrawling +VisionNight +VisionInfrared +GrimReaping +MatterAbsorption +TheForce +Resurrection +Terrakinesis +VisionHeat +Vitakinesis +RadarSense +QwardianPowerRing +WeatherControl +VisionXRay +VisionThermal +WebCreation +RealityWarping +OdinForce +SymbioteCostume +SpeedForce +PhoenixForce +MolecularDissipation +VisionCryo +Omnipresent +Omniscient INT
+) 
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ‘ +’
+LINES TERMINATED BY ‘\n’;
+
+
+CREATE TABLE IF NOT EXISTS heroes_super_powers (hero_names String +super_power_total INT)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ‘ +’
+LINES TERMINATED BY ‘\n’;
+
+
+
+INSERT INTO heroes_super_power_total
+Select hero_names ,(Agility +AcceleratedHealing  +LanternPowerRing +DimensionalAwareness +ColdResistance +Durability +Stealth +EnergyAbsorption +Flight +DangerSense +UnderwaterBreathing +Marksmanship +WeaponsMaster +PowerAugmentation +AnimalAttributes +Longevity +INTelligence +SuperStrength +Cryokinesis +Telepathy +EnergyArmor +EnergyBlasts +Duplication +SizeChanging +DensityControl +Stamina +AstralTravel +AudioControl +Dexterity +Omnitrix +SuperSpeed +Possession +AnimalOrientedPowers +WeaponBasedPowers +Electrokinesis +DarkforceManipulation +DeathTouch +Teleportation +EnhancedSenses +Telekinesis +EnergyBeams +Magic +Hyperkinesis +Jump +Clairvoyance +DimensionalTravel +PowerSense +Shapeshifting +PeakHumanCondition +Immortality +Camouflage +ElementControl +Phasing +AstralProjection +ElectricalTransport +FireControl +Projection +Summoning +EnhancedMemory +Reflexes +Invulnerability +EnergyConstructs +ForceFields +SelfSustenance +AntiGravity +Empathy +PowerNullifier +RadiationControl +PsionicPowers +Elasticity +SubstanceSecretion +ElementalTransmogrification +TechnopathCyberpath +PhotographicReflexes +SeismicPower +Animation +Precognition +MindControl +FireResistance +PowerAbsorption +EnhancedHearing +NovaForce +Insanity +Hypnokinesis +AnimalControl +NaturalArmor +INTangibility +EnhancedSight +MolecularManipulation +HeatGeneration +Adaptation +Gliding +PowerSuit +MindBlast +ProbabilityManipulation +GravityControl +Regeneration +LightControl +Echolocation +Levitation +ToxinDiseaseControl +Banish +EnergyManipulation +HeatResistance +NaturalWeapons +TimeTravel +EnhancedSmell +Illusions +Thirstokinesis +HairManipulation +Illumination +Omnipotent +Cloaking +ChangingArmor +PowerCosmic +Biokinesis +WaterControl +RadiationImmunity +VisionTelescopic +ToxinDiseaseResistance +SpatialAwareness +EnergyResistance +TelepathyResistance +MolecularCombustion +Omnilingualism +PortalCreation +Magnetism +MindControlResistance +PlantControl +Sonar +SonicScream +TimeManipulation +EnhancedTouch +MagicResistance +Invisibility +SubMariner +RadiationAbsorption + INTuitiveaptitude +VisionMicroscopic +Melting +WindControl +SuperBreath +Wallcrawling +VisionNight +VisionInfrared +GrimReaping +MatterAbsorption +TheForce +Resurrection +Terrakinesis +VisionHeat +Vitakinesis +RadarSense +QwardianPowerRing +WeatherControl +VisionXRay +VisionThermal +WebCreation +RealityWarping +OdinForce +SymbioteCostume +SpeedForce +PhoenixForce +MolecularDissipation +VisionCryo +Omnipresent +Omniscient) from heroes_super_powers;
+
+1. select hero_names,super_power_total from heroes_super_power_total SORT BY super_power_total desc limit 5;
+
+2.select hero_names,super_power_total from heroes_super_power_total SORT BY super_power_total desc limit 5;
+
+
+3.select count(hero_name) CountHero,hero_publisher from heroes where hero_publisher group by(hero_publisher);
+
+4. select count(hero_name) CountHero,hero_gender from heroes  group by(hero_gender);
+
+5. select MAX(hero_height) MAXHEIGHT,hero_gender from heroes  group by(hero_gender);
+
+6. select MAX(hero_weight) MAXWEIGHT,hero_gender from heroes  group by(hero_gender);
+
+7. select count(hero_alignment),hero_alignment from heroes where hero_gender='Male' group by (hero_alignment);
+
+8. select count(hero_alignment),hero_alignment from heroes where hero_gender=‘Female' group by (hero_alignment);
+
+9.select count(hero_race),hero_race from heroes  group by (hero_race) ORDER BY hero_race asc limit 5;
+
+10. select distinct(hero_skin_color) from heroes;
+

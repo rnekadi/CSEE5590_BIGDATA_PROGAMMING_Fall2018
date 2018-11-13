@@ -1,0 +1,23 @@
+create keyspace coursera WITH REPLICATION = { 'class':'SimpleStrategy','replication_factor':1};
+
+CREATE TABLE courses_by_learner(course_id int,course_name text,learner_id int ,learner_name text,course_reg_date timestamp,course_fee int,
+PRIMARY KEY(course_id, learner_id));
+
+INSERT into courses_by_learner(course_id,course_name,learner_id,learner_name,course_reg_date,course_fee)
+VALUES (1,'DATA SCIENCE',8,'RAJU NEAKDI','2018-08-01',600);
+
+INSERT into courses_by_learner(course_id,course_name,learner_id,learner_name,course_reg_date,course_fee)
+VALUES (2,'WEB',9,'SWATI SINGH','2018-01-01',800);
+
+INSERT into courses_by_learner(course_id,course_name,learner_id,learner_name,course_reg_date,course_fee)
+VALUES (3,'SPARK',4,'RUTHVICK P','2017-08-01',900);
+
+INSERT into courses_by_learner(course_id,course_name,learner_id,learner_name,course_reg_date,course_fee)
+VALUES (4,'BIGDAT',5,'ZEENAT','2016-01-01',1000);
+
+
+select course_fee,learner_name from courses_by_learner where course_name='DATA SCIENCE' ALLOW FILTERING;
+
+select course_fee,course_name from courses_by_learner where course_fee>800 ALLOW FILTERING;
+
+select course_id,learner_id,learner_name from courses_by_learner where course_reg_date>'2017-01-01' ALLOW FILTERING;

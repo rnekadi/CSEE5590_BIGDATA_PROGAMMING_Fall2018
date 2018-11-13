@@ -1,0 +1,20 @@
+$ cd /Desktop/WordCount
+$ sudo su hdfs
+$ hadoop fs -mkdir /user/cloudera
+$ hadoop fs -chown cloudera /user/cloudera
+$ exit
+
+$ sudo su cloudera
+$ hadoop fs -mkdir /user/cloudera/wordcount /user/cloudera/wordcount/input 
+$ hadoop fs -put file* /user/cloudera/wordcount/input
+
+$ mkdir -p build
+$ javac -cp /usr/lib/hadoop/*:/usr/lib/hadoop-mapreduce/* WordCount.java -d build -Xlint 
+$ jar -cvf wordcount.jar -C build/ . 
+$ hadoop jar wordcount.jar org.myorg.WordCount /user/cloudera/wordcount/input /user/cloudera/wordcount/output
+
+$ hadoop fs -cat /user/cloudera/wordcount/output/*
+
+
+If you want to run the sample again, you first need to remove the output directory. Use the following command. 
+$ hadoop fs -rm -r /user/cloudera/wordcount/output

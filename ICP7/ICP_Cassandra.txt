@@ -1,0 +1,46 @@
+#Created book Keyspaces
+
+CREATE KEYSPACE books WITH REPLICATION = { 'class':'SimpleStrategy','replication_factor':1};
+
+# Use books
+use books;
+
+# create table all books
+
+CREATE TABLE allbooks (
+	book_id int,category text,title text,number_pages int, 
+        publisher text, pub_date timestamp, author text,
+	PRIMARY KEY(publisher, pub_date,book_id)
+);
+
+
+# INSERT INTO all books table
+
+Insert into allbooks(book_id,category,title,number_pages,publisher,pub_date,author) 
+VALUES (1,'mystery','Murder By Alibi',500,'Penguin','2013-08-12','Dorothy Sawyer');
+
+
+Insert into allbooks(book_id,category,title,number_pages,publisher,pub_date,author) 
+VALUES (2,'mystery','Murder at the School',800,'MORGAN','2014-09-30','Tom Jones');
+
+
+Insert into allbooks(book_id,category,title,number_pages,publisher,pub_date,author) 
+VALUES (3,'science fiction','Foundation',600,'TOR','1985-02-15','Isaac Asimover');
+
+Insert into allbooks(book_id,category,title,number_pages,publisher,pub_date,author) 
+VALUES (4,'fantasy','On Your Honor',700,'TOR','1999-04-22','David Weaver');
+
+
+# select Statement
+
+Select category, title, publisher, author from allbooks;
+
+Select category, title, publisher, author,pub_date from allbooks where publisher='TOR';
+
+Select title, publisher, author,pub_date ,number_pages from allbooks where category='fantasy' ALLOW FILTERING;
+
+Select category,title, publisher, author,pub_date ,number_pages from allbooks where pub_date='2014-09-30' ALLOW FILTERING;
+
+Select category,title, publisher, author,pub_date ,number_pages from allbooks where number_pages>500 ALLOW FILTERING;
+
+
