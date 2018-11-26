@@ -44,8 +44,6 @@ object GraphAlgo {
     station_df.printSchema()
 
 
-    //b.Perform   10   intuitive   questions   in   Dataset
-    //For this problem we have used the Spark SqL on DataFrames
 
     //First of all creat three Temp View
 
