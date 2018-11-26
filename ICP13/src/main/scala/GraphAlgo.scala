@@ -99,7 +99,7 @@ object GraphAlgo {
     //Saving to File
     stationGraph.vertices.write.csv("/Users/sai/Documents/GitHub/CSEE5590_BIGDATA_PROGAMMING_Fall2018/ICP13/ver")
 
-    stationGraph.edges.write.csv("Users/sai/Documents/GitHub/CSEE5590_BIGDATA_PROGAMMING_Fall2018/ICP13/edge")
+    stationGraph.edges.write.csv("/Users/sai/Documents/GitHub/CSEE5590_BIGDATA_PROGAMMING_Fall2018/ICP13/edge")
 
 
 
