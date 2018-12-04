@@ -4,7 +4,7 @@
 		module="twitter-build"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20181201224317"
+		publication="20181203221057"
 		e:sbtVersion="1.0" e:scalaVersion="2.12"
 	>
 		<description>

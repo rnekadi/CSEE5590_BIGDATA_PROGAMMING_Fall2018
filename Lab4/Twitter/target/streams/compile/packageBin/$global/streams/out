@@ -1,15 +1,1 @@
-[0m[[0m[0minfo[0m] [0m[0mPackaging /Users/sai/Documents/GitHub/CSEE5590_BIGDATA_PROGAMMING_Fall2018/Lab4/Twitter/target/scala-2.11/twitter_2.11-0.1.jar ...[0m
-[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	TwitterWordCount$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/sai/Documents/GitHub/CSEE5590_BIGDATA_PROGAMMING_Fall2018/Lab4/Twitter/target/scala-2.11/classes/TwitterWordCount$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	TwitterWordCount$$anonfun$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/sai/Documents/GitHub/CSEE5590_BIGDATA_PROGAMMING_Fall2018/Lab4/Twitter/target/scala-2.11/classes/TwitterWordCount$$anonfun$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	TwitterWordCount$$anonfun$3.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/sai/Documents/GitHub/CSEE5590_BIGDATA_PROGAMMING_Fall2018/Lab4/Twitter/target/scala-2.11/classes/TwitterWordCount$$anonfun$3.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	TwitterWordCount$$anonfun$2$$anonfun$apply$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/sai/Documents/GitHub/CSEE5590_BIGDATA_PROGAMMING_Fall2018/Lab4/Twitter/target/scala-2.11/classes/TwitterWordCount$$anonfun$2$$anonfun$apply$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	TwitterWordCount$$anonfun$2.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/sai/Documents/GitHub/CSEE5590_BIGDATA_PROGAMMING_Fall2018/Lab4/Twitter/target/scala-2.11/classes/TwitterWordCount$$anonfun$2.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	TwitterWordCount.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/sai/Documents/GitHub/CSEE5590_BIGDATA_PROGAMMING_Fall2018/Lab4/Twitter/target/scala-2.11/classes/TwitterWordCount.class[0m
-[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m
+[0m[[0m[0mdebug[0m] [0m[0mJar uptodate: /Users/sai/Documents/GitHub/CSEE5590_BIGDATA_PROGAMMING_Fall2018/Lab4/Twitter/target/scala-2.11/twitter_2.11-0.1.jar[0m
